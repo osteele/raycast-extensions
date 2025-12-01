@@ -10,7 +10,8 @@
     "thewinger",
     "LightQuantum",
     "Mmehdi06",
-    "abhiy13"
+    "abhiy13",
+    "osteele"
   ],
   "categories": [
     "Productivity",
@@ -79,6 +80,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "moveWindowToWorkspace",
+      "title": "Move Window to Workspace",
+      "description": "Move the focused window to a selected workspace",
+      "mode": "view"
+    },
+    {
+      "name": "switchToWorkspace",
+      "title": "Switch to Workspace",
+      "description": "Switch to a selected workspace",
+      "mode": "view"
     }
   ],
   "dependencies": {

@@ -79,3 +79,33 @@ export function focusWindow(windowId: string) {
 
   popToRoot({ clearSearchBar: true });
 }
+
+export function getWorkspaces(): string[] {
+  const result = spawnSync("aerospace", ["list-workspaces", "--all"], {
+    env: env(),
+    encoding: "utf8",
+    timeout: 15000,
+  });
+
+  return result.stdout.trim().split("\n").filter(Boolean);
+}
+
+export function moveWindowToWorkspace(workspace: string) {
+  spawnSync("aerospace", ["move-node-to-workspace", workspace], {
+    env: env(),
+    encoding: "utf8",
+    timeout: 15000,
+  });
+
+  popToRoot({ clearSearchBar: true });
+}
+
+export function switchToWorkspace(workspace: string) {
+  spawnSync("aerospace", ["workspace", workspace], {
+    env: env(),
+    encoding: "utf8",
+    timeout: 15000,
+  });
+
+  popToRoot({ clearSearchBar: true });
+}
