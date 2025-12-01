@@ -1,5 +1,10 @@
 # aerospace Changelog
 
+## [New Features] - 2025-12-01
+
+- Add "Move Window to Workspace" command to move the focused window to a selected workspace
+- Add "Switch to Workspace" command to switch to a selected workspace
+
 ## [Improvements] - 2025-08-11
 
 - Render config using TOML, fixing display issues with malformed config
