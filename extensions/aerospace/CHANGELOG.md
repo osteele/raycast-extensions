@@ -1,6 +1,6 @@
 # aerospace Changelog
 
-## [New Features] - 2025-12-01
+## [New Features] - {PR_MERGE_DATE}
 
 - Add "Move Window to Workspace" command to move the focused window to a selected workspace
 - Add "Switch to Workspace" command to switch to a selected workspace
